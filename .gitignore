@@ -2,3 +2,5 @@
 .gdnative/
 Cargo.lock
 
+# Godot import hashes
+.import/
