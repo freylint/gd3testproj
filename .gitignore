@@ -1,6 +1,9 @@
-# Build Artifacts
+# Rust Build Artifacts
 .gdnative/
 Cargo.lock
+
+# DotNet Build Artifacts
+.mono/
 
 # Godot import hashes
 .import/
