@@ -1,0 +1,18 @@
+[package]
+name = "gd3testproj"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gdnative = "0.9"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = "z"
+
+[lib]
+name = "native"
+path = "src/native/lib.rs"
+crate-type = ["cdylib"]

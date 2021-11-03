@@ -1,0 +1,6 @@
+# Rust Build Artifacts
+.gdnative/
+Cargo.lock
+
+# DotNet Build Artifacts
+.mono/

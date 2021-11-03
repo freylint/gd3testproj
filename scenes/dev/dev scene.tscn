@@ -1,0 +1,98 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/tiles/cad/exported/raw tile.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://assets/pieces/exported/test piece.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://assets/tiles/material/Unpainted Model.material" type="Material" id=3]
+[ext_resource path="res://assets/textures/prototype/dark/texture_02.png" type="Texture" id=4]
+[ext_resource path="res://assets/textures/prototype/light/texture_01.png" type="Texture" id=5]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 4 )
+metallic_texture = ExtResource( 5 )
+
+[sub_resource type="CubeMesh" id=2]
+material = SubResource( 1 )
+size = Vector3( 10, 0.5, 10 )
+
+[node name="Dev Scene" type="Spatial"]
+
+[node name="Test Tiles" type="Spatial" parent="."]
+
+[node name="raw tile" type="MeshInstance" parent="Test Tiles"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="raw tile6" type="MeshInstance" parent="Test Tiles"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.73 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="raw tile7" type="MeshInstance" parent="Test Tiles"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.73 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="raw tile2" type="MeshInstance" parent="Test Tiles"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.865 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="raw tile3" type="MeshInstance" parent="Test Tiles"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -0.865 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="raw tile4" type="MeshInstance" parent="Test Tiles"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0.865 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="raw tile5" type="MeshInstance" parent="Test Tiles"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, -0.865 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="test piece" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.17, 0 )
+mesh = ExtResource( 2 )
+material/0 = ExtResource( 3 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0 )
+mesh = SubResource( 2 )
+material/0 = null

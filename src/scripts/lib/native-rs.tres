@@ -1,0 +1,7 @@
+[gd_resource type="GDNativeLibrary" format=2]
+
+[resource]
+entry/Windows.64 = "res://.gdnative/rust/release/native.dll"
+entry/Windows.64(DEBUG) = "res://.gdnative/rust/debug/native.dll"
+dependency/Windows.64 = [  ]
+dependency/Windows.64(DEBUG) = [  ]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/tiles/cad/exported/raw tile.obj" type="ArrayMesh" id=1]
+
+[node name="Empty Tile" type="MeshInstance"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
